@@ -1,6 +1,7 @@
 import Experience from "@/components/experience";
 import { Canvas } from "@react-three/fiber";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
             Sphere
           </a>
           <ul className="flex gap-2 text-slate-400">
-            <li>Explore</li>
+            <Link href={"/shoe"}>Nike Shoe</Link>
             <li>About</li>
           </ul>
         </nav>
